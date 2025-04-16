@@ -1,0 +1,18 @@
+import csv
+
+def afficher_menu():
+    menu = []
+    with open('menu.csv', "r") as fichier:
+        lecteur = csv.reader(fichier)
+        next(lecteur)
+        for plat in lecteur:
+            , prix, categorie = plat
+            menu.append({
+                'nom': nom,
+                'prix': float(prix),
+                'categorie': categorie
+            })
+    return menu
+
+
+print("test")
