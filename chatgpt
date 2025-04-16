@@ -1,0 +1,118 @@
+import csv
+import os
+
+def charger_menu(fichier):
+    menu = []
+    if not os.path.exists(fichier):
+        print(f"❌ Le fichier '{fichier}' est introuvable.")
+        return menu
+    try:
+        with open(fichier, newline='', encoding='utf-8') as csvfile:
+            lecteur = csv.reader(csvfile)
+            for ligne in lecteur:
+                if len(ligne) != 3:
+                    print("❌ Ligne mal formatée dans menu.csv. Elle sera ignorée.")
+                    continue
+                nom, prix, categorie = ligne
+                try:
+                    prix = float(prix)
+                    if prix <= 0:
+                        raise ValueError
+                    menu.append({
+                        'nom': nom.strip(),
+                        'prix': prix,
+                        'categorie': categorie.strip()
+                    })
+                except ValueError:
+                    print(f"❌ Prix invalide pour le plat '{nom}'. Ligne ignorée.")
+    except Exception as e:
+        print(f"❌ Erreur lors de la lecture du menu : {e}")
+    return menu
+
+def afficher_menu(menu):
+    if not menu:
+        print("⚠️ Aucun plat disponible dans le menu.")
+        return
+    categories = sorted(set([plat['categorie'] for plat in menu]))
+    for cat in categories:
+        print(f"\n--- {cat.upper()} ---")
+        for plat in menu:
+            if plat['categorie'] == cat:
+                print(f"{plat['nom']} - {plat['prix']:.2f} $")
+
+def prendre_commande(menu):
+    commande = []
+    noms_plats = [plat['nom'].lower() for plat in menu]
+    while True:
+        plat_nom = input("\nEntrez le nom du plat (ou 'fin' pour terminer) : ").strip()
+        if plat_nom.lower() == 'fin':
+            break
+        if plat_nom.lower() not in noms_plats:
+            print("❌ Plat inexistant. Veuillez réessayer.")
+            continue
+        try:
+            quantite = int(input("Quantité : "))
+            if quantite <= 0:
+                raise ValueError
+        except ValueError:
+            print("❌ Entrez un entier positif pour la quantité.")
+            continue
+
+        plat = next(p for p in menu if p['nom'].lower() == plat_nom.lower())
+        commande.append({
+            'nom': plat['nom'],
+            'prix': plat['prix'],
+            'quantite': quantite
+        })
+        print(f"✅ {quantite} x {plat['nom']} ajouté(s) à la commande.")
+    return commande
+
+def calculer_total(commande):
+    sous_total = sum(item['prix'] * item['quantite'] for item in commande)
+    taxes = sous_total * 0.15
+    total = sous_total + taxes
+    return round(sous_total, 2), round(taxes, 2), round(total, 2)
+
+def generer_recu(commande, sous_total, taxes, total):
+    print("\n====== REÇU ======")
+    for item in commande:
+        ligne = f"{item['quantite']} x {item['nom']} @ {item['prix']:.2f} $ = {(item['quantite'] * item['prix']):.2f} $"
+        print(ligne)
+    print("------------------------")
+    print(f"Sous-total : {sous_total:.2f} $")
+    print(f"Taxes (15%) : {taxes:.2f} $")
+    print(f"Total : {total:.2f} $")
+
+def sauvegarder_commande(commande, sous_total, taxes, total, fichier="commandes.txt"):
+    try:
+        with open(fichier, 'a', encoding='utf-8') as f:
+            f.write("Nouvelle commande\n")
+            for item in commande:
+                f.write(f"{item['quantite']} x {item['nom']} @ {item['prix']:.2f} $\n")
+            f.write(f"Sous-total : {sous_total:.2f} $\n")
+            f.write(f"Taxes : {taxes:.2f} $\n")
+            f.write(f"Total : {total:.2f} $\n")
+            f.write("-" * 30 + "\n")
+        print("📝 Commande sauvegardée dans 'commandes.txt'.")
+    except Exception as e:
+        print(f"❌ Erreur lors de la sauvegarde de la commande : {e}")
+
+def main():
+    print("🍽️ Bienvenue dans le simulateur de restaurant !")
+    menu = charger_menu("menu.csv")
+    if not menu:
+        print("Le menu est vide ou invalide. Fermeture du programme.")
+        return
+
+    afficher_menu(menu)
+    commande = prendre_commande(menu)
+
+    if commande:
+        sous_total, taxes, total = calculer_total(commande)
+        generer_recu(commande, sous_total, taxes, total)
+        sauvegarder_commande(commande, sous_total, taxes, total)
+    else:
+        print("⚠️ Aucune commande effectuée.")
+
+if __name__ == "__main__":
+    main()
