@@ -16,3 +16,46 @@ def afficher_menu():
 
 
 print("test")
+
+
+
+
+import csv
+
+def tableau(data):
+    print(f"{'Nom':<70}|  {'Categorie':<30}|  {'Prix ':<15}")
+    print("-" * 120)
+    for ligne in data:
+        print(f"{ligne[0]:<70}|  {ligne[1]:<30}|  {ligne[2]:<15}")
+
+def afficher_menu():
+    with open('menu.csv', 'r',encoding='utf-8') as fichier:
+        lecteur = csv.reader(fichier)
+        next(lecteur)
+        menu=list(lecteur)
+        n=len(menu)
+        data=[]
+        for plat in menu:
+            if len(plat) < 6:
+                continue
+            ligne = (f"{plat[2]}", f"{plat[1]}", f"{plat[5]}")
+            data.append(ligne)
+        tableau(data)   
+afficher_menu()
+
+def prendre_commande(menu):
+    try:
+        choix=(input("entrez l'id du plat "))
+        plat_choisi=False
+        for plat in menu:
+            plat=(f"{plat[2]}", f"{plat[1]}", f"{plat[5]}")
+            if plat['Product_ID'] == choix:
+               quantite=int(input("donnez la quantité du plat "))
+               if quantite <= 0:
+                  print("quatité invalide")
+                  break
+               else:
+                   print(f"{quantite} x {plat['nom']} votre commande à été enregistré.")
+                   plat_choisi=True
+                   break
+        if not plat_choisi:
