@@ -59,3 +59,11 @@ def prendre_commande(menu):
                    plat_choisi=True
                    break
         if not plat_choisi:
+            print("plat indisponible")
+         
+    except ValueError:
+        print("veillez entrez un nombre positif")
+          
+prendre_commande(menu)
+
+
