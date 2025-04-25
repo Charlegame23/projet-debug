@@ -1,0 +1,21 @@
+# Calcul des totaux
+def calculer_total(commande):
+    sous_total = sum(item['plat']['prix'] * item['quantite'] for item in commande)
+    taxes = sous_total * TAX_RATE
+    total = sous_total + taxes
+    return round(sous_total, 2), round(taxes, 2), round(total, 2)
+
+# Générer un reçu
+def generer_recu(commande, sous_total, taxes, total):
+    print("\n----- REÇU -----")
+    for item in commande:
+        nom = item['plat']['nom']
+        prix = item['plat']['prix']
+        qte = item['quantite']
+        total_item = prix * qte
+        print(f"{nom} x {qte} - {total_item:.2f} $")
+    print("----------------")
+    print(f"Sous-total : {sous_total:.2f} $")
+    print(f"Taxes (15%) : {taxes:.2f} $")
+    print(f"Total : {total:.2f} $")
+    print("----------------\n")
