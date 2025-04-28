@@ -1,152 +1,69 @@
 import csv
 
-#DEF
 
-def Conard():
-    print("-------------------------------------------------")
-    print("-------------------------------------------------")
-    print("------------Choisissez votre categorie-----------")
-    print("-------------------------------------------------")
-    print("-------------------------------------------------")
-    print("-------------------------------------------------")
-    print("1--Breakfast-------------------------------------")
-    print("-------------------------------------------------")
-    print("2--Beef & Pork-----------------------------------")
-    print("-------------------------------------------------")
-    print("3--Chicken & Fish--------------------------------")
-    print("-------------------------------------------------")
-    print("4--Salads----------------------------------------") 
-    print("-------------------------------------------------")
-    print("5--Snacks & Sides--------------------------------")
-    print("-------------------------------------------------")
-    print("6--Desserts--------------------------------------")
-    print("-------------------------------------------------")
-    print("7--Beverages-------------------------------------")
-    print("-------------------------------------------------")
-    print("8--Coffee & Tea----------------------------------")
-    print("-------------------------------------------------")
-    print("9--Smoothies & Shakes----------------------------")
-    print("-------------------------------------------------")
-    print("10-ALL-------------------------------------------")
-    print("-------------------------------------------------")
-    print("-------------------------------------------------")
-    print("-------------------------------------------------")
-    c = input("Choisissez votre categorie: ")
-    return c
 
-def Breakfast():
-    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
-        csv_reader = csv.reader(f)
-        for r in range(1):
-            next(csv_reader)
-        
-        for i, row in enumerate(csv_reader, start=2):
-            if i > 43:
-                break
-            print(row)
-def BeefPork():
-    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
-        csv_reader = csv.reader(f)
-        for r in range(43):
-            next(csv_reader)
-       
-        for i, row in enumerate(csv_reader, start=44):
-            if i > 58:
-                break
-            print(row)
-def ChickenFish():
-    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
-        csv_reader = csv.reader(f)
-        for r in range(58):
-            next(csv_reader)
-       
-        for i, row in enumerate(csv_reader, start=59):
-            if i > 85:
-                break
-            print(row)
-def Salads():
-    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
-        csv_reader = csv.reader(f)
-        for r in range(85):
-            next(csv_reader)
-       
-        for i, row in enumerate(csv_reader, start=86):
-            if i > 91:
-                break
-            print(row)
-def SnacksSides():
-    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
-        csv_reader = csv.reader(f)
-        for r in range(91):
-            next(csv_reader)
-       
-        for i, row in enumerate(csv_reader, start=92):
-            if i > 104:
-                break
-            print(row)
-def Desserts():
-    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
-        csv_reader = csv.reader(f)
-        for r in range(104):
-            next(csv_reader)
-       
-        for i, row in enumerate(csv_reader, start=105):
-            if i > 111:
-                break
-            print(row)
-def Beverages():
-    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
-        csv_reader = csv.reader(f)
-        for r in range(111):
-            next(csv_reader)
-       
-        for i, row in enumerate(csv_reader, start=112):
-            if i > 261:
-                break
-            print(row)
-def All():
-    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
-        csv_reader = csv.reader(f)
-        for r in range(1):
-            next(csv_reader)
-       
-        for i, row in enumerate(csv_reader, start=2):
-            if i > 261:
-                break
-            print(row)
+def tableau(data): 
+    print(f"{'Nom':<5}|  {'Categorie':<20}|  {'nom ':<70}| {'prix':<12}")
+    print("-" * 120)
+    for ligne in data:
+        print(f"{ligne[0]:<5}|  {ligne[1]:<20}|  {ligne[2]:<70}| {ligne[3]:<12}")
+
+def afficher_menu():
+    global plat
+    with open('C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv',
+              'r', encoding='utf-8') as fichier:
+        lecteur = csv.reader(fichier)
+        next(lecteur)  # sauter 
+        menu = []
+        data = []
+        for plat in lecteur:
+            if len(plat) < 4:
+                continue
+            ligne = (plat[0], plat[1], plat[2], plat[3])  # (ID, Cat�gorie, Nom, Prix)
+            data.append(ligne)
+            menu.append(plat)
+        # Fin de la boucle for : on peut maintenant appeler tableau et retourner
+        tableau(data)
+        return menu
+def prendre_commande():
+    commande = []
+    while True:  # Corrigé "wwhile" -> "while"
+        plat = input("Entrez le numero du plat que vous souhaitez commander (ou '0' pour quitter) : ")
+        if plat == '0':
+            print("Commande termieée.")
+            break
+        if not plat.isdigit():
+            print("Entree invalide. Veuillez entrer uniquement des chiffres.")
+            continue
+        plat = int(plat)
+        if plat <= 0 or plat > 260:
+            print("Entrée invalide. Veuillez entrer un nombre entre 1 et 260.")
+            continue
+
+        commande.append(plat)
+        print(f"'{plat}' ajoute à la commande.")  # corrigé "ajouter" -> "ajouté" et meilleur français
+    return commande
 
 
 
 #debug
-
+Y= 1
 X = 0
-with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r') as f:
+
+with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r', encoding='utf-8') as f:
     r = csv.reader(f)
     for row in r:
         if X == 1:
             print(row)
 
+if Y == 1:
+    print("plat")
+    menu = afficher_menu()
+    c = prendre_commande()
 #variables
 
-c = Conard()
+#c = Conard()
 
 #main
-
-if c == "1":
-    print(Breakfast())
-elif c =="2":
-    print(BeefPork())
-elif c == "3":
-    print(ChickenFish())
-elif c == "4":
-    print(Salads())
-elif c == "5":
-    print(SnacksSides())
-elif c == "6":
-    print(Desserts())
-elif c == "7":
-    print(Beverages())
-elif c == "10":
-    print(All())
 
 
