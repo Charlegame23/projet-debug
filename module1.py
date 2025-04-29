@@ -19,15 +19,14 @@ def afficher_menu():
         for plat in lecteur:
             if len(plat) < 4:
                 continue
-            ligne = (plat[0], plat[1], plat[2], plat[3])  # (ID, Cat�gorie, Nom, Prix)
+            ligne = (plat[0], plat[1], plat[2], plat[3])  #id, cat, nom, prix
             data.append(ligne)
             menu.append(plat)
-        # Fin de la boucle for : on peut maintenant appeler tableau et retourner
         tableau(data)
         return menu
 def prendre_commande():
     commande = []
-    while True:  # Corrigé "wwhile" -> "while"
+    while True:  
         plat = input("Entrez le numero du plat que vous souhaitez commander (ou '0' pour quitter) : ")
         if plat == '0':
             print("Commande termieée.")
@@ -43,27 +42,44 @@ def prendre_commande():
         commande.append(plat)
         print(f"'{plat}' ajoute à la commande.")  # corrigé "ajouter" -> "ajouté" et meilleur français
     return commande
+def calculer_total(commande):
+    total = 0
+    t = 0
+    with open('C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv',
+              'r', encoding='utf-8') as fichier:
+        lecteur = csv.reader(fichier)
+        next(lecteur)  # sauter
+        for plat in lecteur:
+            if len(plat) < 4:
+                continue
+            if int(plat[0]) in commande:
+                t += float(plat[3])
+        t2 = t*1.15
+        total = round(t2, 2)
+    return total
+def recu(total,commande):
+    with open('C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\recu.txt', 'w') as fichier:
+        fichier.write("Voici votre commande : \n")
+        for plat in commande:
+            fichier.write(f"{plat}\n")
+        fichier.write(f"Le total de votre commande est : {total} $\n")
+        print("Recu enregistré dans le fichier 'recu.txt'.")
 
-
-
-#debug
+#debug and main
 Y= 1
 X = 0
+if X == 1:#debug
+    with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r', encoding='utf-8') as f:
+     r = csv.reader(f)
+     for row in r:
+       print(row)
 
-with open(r"C:\\Users\\23cha\\Documents\\GitHub\\projet-debug\\menu.csv", 'r', encoding='utf-8') as f:
-    r = csv.reader(f)
-    for row in r:
-        if X == 1:
-            print(row)
-
-if Y == 1:
+if Y == 1: #main
     print("plat")
     menu = afficher_menu()
     c = prendre_commande()
-#variables
-
-#c = Conard()
-
-#main
+    total = calculer_total(c)
+    recu(total,c)
+    print("votre total est", total, " $")
 
 
