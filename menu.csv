@@ -1,0 +1,261 @@
+Product ID,Category,Item,Prix $
+1,Breakfast,Egg McMuffin,8.43
+2,Breakfast,Egg White Delight,14.42
+3,Breakfast,Sausage McMuffin,6.66
+4,Breakfast,Sausage McMuffin with Egg,14.32
+5,Breakfast,Sausage McMuffin with Egg Whites,15.06
+6,Breakfast,Steak & Egg McMuffin,15.51
+7,Breakfast,"Bacon, Egg & Cheese Biscuit (Regular Biscuit)",17.78
+8,Breakfast,"Bacon, Egg & Cheese Biscuit (Large Biscuit)",17.69
+9,Breakfast,"Bacon, Egg & Cheese Biscuit with Egg Whites (Regular Biscuit)",13.8
+10,Breakfast,"Bacon, Egg & Cheese Biscuit with Egg Whites (Large Biscuit)",10.54
+11,Breakfast,Sausage Biscuit (Regular Biscuit),18.5
+12,Breakfast,Sausage Biscuit (Large Biscuit),8.63
+13,Breakfast,Sausage Biscuit with Egg (Regular Biscuit),14.13
+14,Breakfast,Sausage Biscuit with Egg (Large Biscuit),18.53
+15,Breakfast,Sausage Biscuit with Egg Whites (Regular Biscuit),16.14
+16,Breakfast,Sausage Biscuit with Egg Whites (Large Biscuit),3.05
+17,Breakfast,Southern Style Chicken Biscuit (Regular Biscuit),12.49
+18,Breakfast,Southern Style Chicken Biscuit (Large Biscuit),18.34
+19,Breakfast,Steak & Egg Biscuit (Regular Biscuit),3.32
+20,Breakfast,"Bacon, Egg & Cheese McGriddles",18.02
+21,Breakfast,"Bacon, Egg & Cheese McGriddles with Egg Whites",5.74
+22,Breakfast,Sausage McGriddles,9.04
+23,Breakfast,"Sausage, Egg & Cheese McGriddles",5.06
+24,Breakfast,"Sausage, Egg & Cheese McGriddles with Egg Whites",17.7
+25,Breakfast,"Bacon, Egg & Cheese Bagel",4.52
+26,Breakfast,"Bacon, Egg & Cheese Bagel with Egg Whites",7.87
+27,Breakfast,"Steak, Egg & Cheese Bagel",2.09
+28,Breakfast,Big Breakfast (Regular Biscuit),6.27
+29,Breakfast,Big Breakfast (Large Biscuit),13.49
+30,Breakfast,Big Breakfast with Egg Whites (Regular Biscuit),3.63
+31,Breakfast,Big Breakfast with Egg Whites (Large Biscuit),2.27
+32,Breakfast,Big Breakfast with Hotcakes (Regular Biscuit),17.55
+33,Breakfast,Big Breakfast with Hotcakes (Large Biscuit),7.03
+34,Breakfast,Big Breakfast with Hotcakes and Egg Whites (Regular Biscuit),11.93
+35,Breakfast,Big Breakfast with Hotcakes and Egg Whites (Large Biscuit),9.39
+36,Breakfast,Hotcakes,18.95
+37,Breakfast,Hotcakes and Sausage,12.71
+38,Breakfast,Sausage Burrito,2.51
+39,Breakfast,Hash Brown,6.72
+40,Breakfast,Cinnamon Melts,16.1
+41,Breakfast,Fruit & Maple Oatmeal,2.14
+42,Breakfast,Fruit & Maple Oatmeal without Brown Sugar,6.97
+43,Beef & Pork,Big Mac,5.01
+44,Beef & Pork,Quarter Pounder with Cheese,8.33
+45,Beef & Pork,Quarter Pounder with Bacon & Cheese,6.09
+46,Beef & Pork,Quarter Pounder with Bacon Habanero Ranch,2.94
+47,Beef & Pork,Quarter Pounder Deluxe,2.51
+48,Beef & Pork,Double Quarter Pounder with Cheese,19.8
+49,Beef & Pork,Hamburger,5.52
+50,Beef & Pork,Cheeseburger,19.36
+51,Beef & Pork,Double Cheeseburger,3.22
+52,Beef & Pork,Bacon Clubhouse Burger,9.54
+53,Beef & Pork,McDouble,10.86
+54,Beef & Pork,Bacon McDouble,19.37
+55,Beef & Pork,Daily Double,8.63
+56,Beef & Pork,Jalapeño Double,11.34
+57,Beef & Pork,McRib,6.18
+58,Chicken & Fish,Premium Crispy Chicken Classic Sandwich,3.94
+59,Chicken & Fish,Premium Grilled Chicken Classic Sandwich,19.69
+60,Chicken & Fish,Premium Crispy Chicken Club Sandwich,3.12
+61,Chicken & Fish,Premium Grilled Chicken Club Sandwich,16.36
+62,Chicken & Fish,Premium Crispy Chicken Ranch BLT Sandwich,14.1
+63,Chicken & Fish,Premium Grilled Chicken Ranch BLT Sandwich,11.98
+64,Chicken & Fish,Bacon Clubhouse Crispy Chicken Sandwich,4.88
+65,Chicken & Fish,Bacon Clubhouse Grilled Chicken Sandwich,10.27
+66,Chicken & Fish,Southern Style Crispy Chicken Sandwich,17.14
+67,Chicken & Fish,McChicken,2.67
+68,Chicken & Fish,Bacon Cheddar McChicken,13.86
+69,Chicken & Fish,Bacon Buffalo Ranch McChicken,5.93
+70,Chicken & Fish,Buffalo Ranch McChicken,10.02
+71,Chicken & Fish,Premium McWrap Chicken & Bacon (Crispy Chicken),18.57
+72,Chicken & Fish,Premium McWrap Chicken & Bacon (Grilled Chicken),15.88
+73,Chicken & Fish,Premium McWrap Chicken & Ranch (Crispy Chicken),18.3
+74,Chicken & Fish,Premium McWrap Chicken & Ranch (Grilled Chicken),3.49
+75,Chicken & Fish,Premium McWrap Southwest Chicken (Crispy Chicken),2.33
+76,Chicken & Fish,Premium McWrap Southwest Chicken (Grilled Chicken),19.38
+77,Chicken & Fish,Premium McWrap Chicken Sweet Chili (Crispy Chicken),9.92
+78,Chicken & Fish,Premium McWrap Chicken Sweet Chili (Grilled Chicken),7.76
+79,Chicken & Fish,Chicken McNuggets (4 piece),14.31
+80,Chicken & Fish,Chicken McNuggets (6 piece),10.37
+81,Chicken & Fish,Chicken McNuggets (10 piece),19.53
+82,Chicken & Fish,Chicken McNuggets (20 piece),8.27
+83,Chicken & Fish,Chicken McNuggets (40 piece),6.38
+84,Chicken & Fish,Filet-O-Fish,6.13
+85,Salads,Premium Bacon Ranch Salad (without Chicken),20
+86,Salads,Premium Bacon Ranch Salad with Crispy Chicken,6.48
+87,Salads,Premium Bacon Ranch Salad with Grilled Chicken,14.74
+88,Salads,Premium Southwest Salad (without Chicken),2.49
+89,Salads,Premium Southwest Salad with Crispy Chicken,6.85
+90,Salads,Premium Southwest Salad with Grilled Chicken,12.52
+91,Snacks & Sides,Chipotle BBQ Snack Wrap (Crispy Chicken),3.04
+92,Snacks & Sides,Chipotle BBQ Snack Wrap (Grilled Chicken),17.91
+93,Snacks & Sides,Honey Mustard Snack Wrap (Crispy Chicken),9.25
+94,Snacks & Sides,Honey Mustard Snack Wrap (Grilled Chicken),19.83
+95,Snacks & Sides,Ranch Snack Wrap (Crispy Chicken),17.56
+96,Snacks & Sides,Ranch Snack Wrap (Grilled Chicken),7.15
+97,Snacks & Sides,Small French Fries,17.92
+98,Snacks & Sides,Medium French Fries,8.41
+99,Snacks & Sides,Large French Fries,5.09
+100,Snacks & Sides,Kids French Fries,17.35
+101,Snacks & Sides,Side Salad,7.55
+102,Snacks & Sides,Apple Slices,15.1
+103,Snacks & Sides,Fruit 'n Yogurt Parfait,11.94
+104,Desserts,Baked Apple Pie,9.2
+105,Desserts,Chocolate Chip Cookie,8.34
+106,Desserts,Oatmeal Raisin Cookie,15.94
+107,Desserts,Kids Ice Cream Cone,11.01
+108,Desserts,Hot Fudge Sundae,10.09
+109,Desserts,Hot Caramel Sundae,9.25
+110,Desserts,Strawberry Sundae,19.66
+111,Beverages,Coca-Cola Classic (Small),7.19
+112,Beverages,Coca-Cola Classic (Medium),2.49
+113,Beverages,Coca-Cola Classic (Large),9.5
+114,Beverages,Coca-Cola Classic (Child),4.21
+115,Beverages,Diet Coke (Small),15.75
+116,Beverages,Diet Coke (Medium),9.69
+117,Beverages,Diet Coke (Large),13.6
+118,Beverages,Diet Coke (Child),19.34
+119,Beverages,Dr Pepper (Small),8.65
+120,Beverages,Dr Pepper (Medium),7.28
+121,Beverages,Dr Pepper (Large),15.32
+122,Beverages,Dr Pepper (Child),17.54
+123,Beverages,Diet Dr Pepper (Small),14.94
+124,Beverages,Diet Dr Pepper (Medium),16.27
+125,Beverages,Diet Dr Pepper (Large),17.59
+126,Beverages,Diet Dr Pepper (Child),2.93
+127,Beverages,Sprite (Small),10.48
+128,Beverages,Sprite (Medium),16.44
+129,Beverages,Sprite (Large),12.87
+130,Beverages,Sprite (Child),4.19
+131,Beverages,1% Low Fat Milk Jug,11.63
+132,Beverages,Fat Free Chocolate Milk Jug,5.85
+133,Beverages,Minute Maid 100% Apple Juice Box,3.82
+134,Beverages,Minute Maid Orange Juice (Small),11.39
+135,Beverages,Minute Maid Orange Juice (Medium),15.74
+136,Beverages,Minute Maid Orange Juice (Large),16.9
+137,Beverages,Dasani Water Bottle,7.72
+138,Coffee & Tea,Iced Tea (Small),12.61
+139,Coffee & Tea,Iced Tea (Medium),13.28
+140,Coffee & Tea,Iced Tea (Large),13.09
+141,Coffee & Tea,Iced Tea (Child),15.17
+142,Coffee & Tea,Sweet Tea (Small),2.09
+143,Coffee & Tea,Sweet Tea (Medium),8.27
+144,Coffee & Tea,Sweet Tea (Large),15.57
+145,Coffee & Tea,Sweet Tea (Child),4.37
+146,Coffee & Tea,Coffee (Small),14.48
+147,Coffee & Tea,Coffee (Medium),16.65
+148,Coffee & Tea,Coffee (Large),11.15
+149,Coffee & Tea,Latte (Small),10.57
+150,Coffee & Tea,Latte (Medium),13.19
+151,Coffee & Tea,Latte (Large),9.71
+152,Coffee & Tea,Caramel Latte (Small),10.76
+153,Coffee & Tea,Caramel Latte (Medium),3.17
+154,Coffee & Tea,Caramel Latte (Large),12.35
+155,Coffee & Tea,Hazelnut Latte (Small),13
+156,Coffee & Tea,Hazelnut Latte (Medium),18.42
+157,Coffee & Tea,Hazelnut Latte (Large),10.01
+158,Coffee & Tea,French Vanilla Latte (Small),4.6
+159,Coffee & Tea,French Vanilla Latte (Medium),2.49
+160,Coffee & Tea,French Vanilla Latte (Large),3.91
+161,Coffee & Tea,Latte with Sugar Free French Vanilla Syrup (Small),2.28
+162,Coffee & Tea,Latte with Sugar Free French Vanilla Syrup (Medium),6.09
+163,Coffee & Tea,Latte with Sugar Free French Vanilla Syrup (Large),19.92
+164,Coffee & Tea,Nonfat Latte (Small),18.57
+165,Coffee & Tea,Nonfat Latte (Medium),14.43
+166,Coffee & Tea,Nonfat Latte (Large),2.71
+167,Coffee & Tea,Nonfat Caramel Latte (Small),15.65
+168,Coffee & Tea,Nonfat Caramel Latte (Medium),5.43
+169,Coffee & Tea,Nonfat Caramel Latte (Large),16.03
+170,Coffee & Tea,Nonfat Hazelnut Latte (Small),4.44
+171,Coffee & Tea,Nonfat Hazelnut Latte (Medium),18.1
+172,Coffee & Tea,Nonfat Hazelnut Latte (Large),3.78
+173,Coffee & Tea,Nonfat French Vanilla Latte (Small),13.41
+174,Coffee & Tea,Nonfat French Vanilla Latte (Medium),3.18
+175,Coffee & Tea,Nonfat French Vanilla Latte (Large),18.35
+176,Coffee & Tea,Nonfat Latte with Sugar Free French Vanilla Syrup (Small),13.95
+177,Coffee & Tea,Nonfat Latte with Sugar Free French Vanilla Syrup (Medium),11.83
+178,Coffee & Tea,Nonfat Latte with Sugar Free French Vanilla Syrup (Large),10.64
+179,Coffee & Tea,Mocha (Small),4.72
+180,Coffee & Tea,Mocha (Medium),18.69
+181,Coffee & Tea,Mocha (Large),6.3
+182,Coffee & Tea,Mocha with Nonfat Milk (Small),4.01
+183,Coffee & Tea,Mocha with Nonfat Milk (Medium),17.46
+184,Coffee & Tea,Mocha with Nonfat Milk (Large),9.53
+185,Coffee & Tea,Caramel Mocha (Small),6.78
+186,Coffee & Tea,Caramel Mocha (Medium),5.25
+187,Coffee & Tea,Caramel Mocha (Large),15.08
+188,Coffee & Tea,Nonfat Caramel Mocha (Small),8.05
+189,Coffee & Tea,Nonfat Caramel Mocha (Medium),2.69
+190,Coffee & Tea,Nonfat Caramel Mocha (Large),8.37
+191,Coffee & Tea,Hot Chocolate (Small),9.68
+192,Coffee & Tea,Hot Chocolate (Medium),6.84
+193,Coffee & Tea,Hot Chocolate (Large),3.25
+194,Coffee & Tea,Hot Chocolate with Nonfat Milk (Small),12.81
+195,Coffee & Tea,Hot Chocolate with Nonfat Milk (Medium),14.35
+196,Coffee & Tea,Hot Chocolate with Nonfat Milk (Large),18.34
+197,Coffee & Tea,Regular Iced Coffee (Small),4.15
+198,Coffee & Tea,Regular Iced Coffee (Medium),3.44
+199,Coffee & Tea,Regular Iced Coffee (Large),3.45
+200,Coffee & Tea,Caramel Iced Coffee (Small),17.33
+201,Coffee & Tea,Caramel Iced Coffee (Medium),18.12
+202,Coffee & Tea,Caramel Iced Coffee (Large),18.76
+203,Coffee & Tea,Hazelnut Iced Coffee (Small),17.58
+204,Coffee & Tea,Hazelnut Iced Coffee (Medium),19.45
+205,Coffee & Tea,Hazelnut Iced Coffee (Large),8.36
+206,Coffee & Tea,French Vanilla Iced Coffee (Small),6.14
+207,Coffee & Tea,French Vanilla Iced Coffee (Medium),5.92
+208,Coffee & Tea,French Vanilla Iced Coffee (Large),16.97
+209,Coffee & Tea,Iced Coffee with Sugar Free French Vanilla Syrup (Small),13.67
+210,Coffee & Tea,Iced Coffee with Sugar Free French Vanilla Syrup (Medium),10.79
+211,Coffee & Tea,Iced Coffee with Sugar Free French Vanilla Syrup (Large),3.68
+212,Coffee & Tea,Iced Mocha (Small),14.27
+213,Coffee & Tea,Iced Mocha (Medium),10.17
+214,Coffee & Tea,Iced Mocha (Large),14.93
+215,Coffee & Tea,Iced Mocha with Nonfat Milk (Small),12.44
+216,Coffee & Tea,Iced Mocha with Nonfat Milk (Medium),5.34
+217,Coffee & Tea,Iced Mocha with Nonfat Milk (Large),2.22
+218,Coffee & Tea,Iced Caramel Mocha (Small),2.2
+219,Coffee & Tea,Iced Caramel Mocha (Medium),18.46
+220,Coffee & Tea,Iced Caramel Mocha (Large),9.05
+221,Coffee & Tea,Iced Nonfat Caramel Mocha (Small),14.87
+222,Coffee & Tea,Iced Nonfat Caramel Mocha (Medium),15.05
+223,Coffee & Tea,Iced Nonfat Caramel Mocha (Large),14.42
+224,Coffee & Tea,Frappé Mocha (Small),5.34
+225,Coffee & Tea,Frappé Mocha (Medium),15.23
+226,Coffee & Tea,Frappé Mocha (Large),7.48
+227,Coffee & Tea,Frappé Caramel (Small),17.92
+228,Coffee & Tea,Frappé Caramel (Medium),4.79
+229,Coffee & Tea,Frappé Caramel (Large),7.41
+230,Coffee & Tea,Frappé Chocolate Chip (Small),13.58
+231,Coffee & Tea,Frappé Chocolate Chip (Medium),8.86
+232,Coffee & Tea,Frappé Chocolate Chip (Large),8.73
+233,Smoothies & Shakes,Blueberry Pomegranate Smoothie (Small),17.19
+234,Smoothies & Shakes,Blueberry Pomegranate Smoothie (Medium),18.31
+235,Smoothies & Shakes,Blueberry Pomegranate Smoothie (Large),5.03
+236,Smoothies & Shakes,Strawberry Banana Smoothie (Small),9.36
+237,Smoothies & Shakes,Strawberry Banana Smoothie (Medium),6.96
+238,Smoothies & Shakes,Strawberry Banana Smoothie (Large),13.74
+239,Smoothies & Shakes,Mango Pineapple Smoothie (Small),12.81
+240,Smoothies & Shakes,Mango Pineapple Smoothie (Medium),13.33
+241,Smoothies & Shakes,Mango Pineapple Smoothie (Large),13.85
+242,Smoothies & Shakes,Vanilla Shake (Small),13.78
+243,Smoothies & Shakes,Vanilla Shake (Medium),8.67
+244,Smoothies & Shakes,Vanilla Shake (Large),12.96
+245,Smoothies & Shakes,Strawberry Shake (Small),2.81
+246,Smoothies & Shakes,Strawberry Shake (Medium),18.07
+247,Smoothies & Shakes,Strawberry Shake (Large),6.96
+248,Smoothies & Shakes,Chocolate Shake (Small),2.72
+249,Smoothies & Shakes,Chocolate Shake (Medium),5.29
+250,Smoothies & Shakes,Chocolate Shake (Large),11.76
+251,Smoothies & Shakes,Shamrock Shake (Medium),9.35
+252,Smoothies & Shakes,Shamrock Shake (Large),3.19
+253,Smoothies & Shakes,McFlurry with M&M's™ Candies (Small),18.54
+254,Smoothies & Shakes,McFlurry with M&M's™ Candies (Medium),2.51
+255,Smoothies & Shakes,McFlurry with M&M's™ Candies (Snack),3.82
+256,Smoothies & Shakes,McFlurry with Oreo Cookies (Small),10.46
+257,Smoothies & Shakes,McFlurry with Oreo Cookies (Medium),16.53
+258,Smoothies & Shakes,McFlurry with Oreo Cookies (Snack),11.64
+259,Smoothies & Shakes,McFlurry with Reese's Peanut Butter Cups (Medium),7.07
+260,Smoothies & Shakes,McFlurry with Reese's Peanut Butter Cups (Snack),5.43
