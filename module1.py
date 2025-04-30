@@ -80,6 +80,7 @@ if Y == 1: #main
     c = prendre_commande()
     total = calculer_total(c)
     recu(total,c)
+    print("Voici votre commande : ",c)
     print("votre total est", total, " $")
 
 
